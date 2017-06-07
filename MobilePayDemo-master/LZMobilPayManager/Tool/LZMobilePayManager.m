@@ -17,29 +17,29 @@
 #import "WechatPayManager.h" //微信支付类
 
 /*************** 支付宝支付 ********************/
-static NSString * const AlipayAppId = @"2017050907171985";
-static NSString * const AlipayRSA2PrivateKey = @"MIIEogIBAAKCAQEAtzO09vrYJjbMzx0FR9Zr5YYQXOQsEvfhX3ubfcnl+7QHYD+AxTmYvD707h37PjpZqgfEFlC28o417VxyoOZ2i/EAHxn3rPW08rExptIc3AnYiXmYfI9c+oH2Nnl/HUzXSVn7r6vJ6M0eHdaOHDHZyoE5CGYxShfIQYAUTzzvSMmaVgsUI0SpFpq/Y42ptWjpvdG1O0Loqomw4FGJXWAkRbzJe44ugEFjlvrWHk85d0Bx0N5YdT7LWWLTnP4RJztXpjK8omwg5/QQGfI5XTrXN1tQxdh2bkmcdmhmV2jEIeAeZuQF2QVIuzt0adPDaov5e9B04IHtzIhkEpfb89rj9wIDAQABAoIBAFX99VGAyPiW/GezLYlcwmSIGyIfD/kPVUBmWsQegs8038lzxVPOBz1FJ96lQAsjhHblEkuPM3CDBBkYLc4Mn1RsmSwAGlubMYZBWhb9xQIbtQJCiyrceD41xoYnXV05dkw96n+42RtnPF2xGh9t3tbI9SZWIYivxRXJsr7G0WKOQ34H1sg/EkyAS6WbGAFn4xb4OS8jDxEFS7F5IlCzMIhQg3lkEADM9p3oJimteBdPWqq5s5eQ/oEfchwXuaL/7Q2WFpj7KgJwnOoot3Ij9wpr+LwYhXZi9GYAYvqBMiGIW9+9qxFpFwYHBaYc27dhzWj3nPMQ4FfgIm7tAg2IsNECgYEA3i8ANGzr9cqL6r6Bw4IoJvMHjpD7PNjUlQRI9TGWL6bCEkrebqcCsFi7S+8njJxB0ramgTMCIRZLFsvVmK3u1ynMJIxGrVZZ4Jq/FIFq1YqMy/wvo0hwssO78FNBXYMFoeiSuf9eHDXftbc/cKvSyV2BWM+siXZnROSKm8PLrTUCgYEA0xXa2XQWmlW02jijdj/FJHfXlNYmuy5LZbxFIY/9Rm4SIqThq2cXyqMjIMedxARtCZKmgOqNTeMsnYwFSaG/RyKUqbQZV9Ofnef57O2PUYd/0RDzl8nAyhEJwjRi8o50g5U5MG2/zaQuuc+8PJtK4dXuysEtYGb4E0mNWcxW7fsCgYB/j0h00Nwfv2vZGAr0LjPTONBr33z+kBZsf4tLim6JaRoe2nEd4jC/AhJ2JBX2undn/IlXv+tHB7+QlPJKuAFZ8ptLmGWzetIbC30MzsiBVQxEyMKo4hwh5hJuhb4Pa/u92wLyWlSzqZKIh26ax2s7RL3QOVr7iMj9WqDhkOXMyQKBgATpbEdFGUWMGwI88SjOQRMhKsYO2aXfZOfAIseuJxGdfBSMS6gGZRpVA3s+yeAGzla7r94uFw2p7J7Z5EGbXu0T0+vDAhf2F6+/9yPZP02BXqsJvvFYQ4EwNk7rkyXbxMBPF56V3zG00VWHjPTIFEz/Amh7aEfm/XzNaFmflKJDAoGAOSADLjIm+gv2EfLIAyi5Z5G82Ev/Ax9i56h+vcRZOiZkn7pnxXjnOhEuPy6y8Xgewp8xSNxO4nz4Uvl8v62HK2Z/xdFpol4TVPjtjdBUdANL+HuUyIp62t9qPMcXzooUoOT1xSfDDhDo04ZyXW93hCQZg6WPtCaUUYOe6WJd44I=";
+static NSString * const AlipayAppId = @"";
+static NSString * const AlipayRSA2PrivateKey = @"";
 static NSString * const AlipayRSAPrivateKey = @"";
 
 /*************** 微信支付 ********************/
-static NSString * const  kWEIXINID  = @"wxf11ffd5d69e777b7";
-static NSString * const  kWEIXINKEY = @"da7bfb83ec6b41223b9f6191c4350afd";
+static NSString * const  kWEIXINID  = @"";
+static NSString * const  kWEIXINKEY = @"";
 /**
  * 支付成功回调地址
  *
  * 注意：不能hardcode在客户端，建议genSign这个过程由服务器端完成
  */
-static NSString * const kWEIXINNOTIFYURL = @"http://54.223.123.195:8088/lilian_web/index.php/home/wxpay/notify_url";
+static NSString * const kWEIXINNOTIFYURL = @"";
 /**
  * 微信开放平台和商户约定的支付密钥
  *
  * 注意：不能hardcode在客户端，建议genSign这个过程由服务器端完成
  */
-static NSString * const  KWXPartnerKey = @"FSA5DF5sf5fd5FG535dty987354DGYft";
+static NSString * const  KWXPartnerKey = @"";
 /**
  *  微信公众平台商户模块生成的ID
  */
-static NSString * const  kWEIXINPartnerId = @"1414067502";
+static NSString * const  kWEIXINPartnerId = @"";
 
 @implementation LZMobilePayManager
 
