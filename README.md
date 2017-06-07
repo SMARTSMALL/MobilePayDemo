@@ -173,17 +173,17 @@ static NSString * const  kWEIXINKEY = @"";
  *
  * 注意：不能hardcode在客户端，建议genSign这个过程由服务器端完成
  */
-static NSString * const kWEIXINNOTIFYURL = @"http://54.223.123.195:8088/lilian_web/index.php/home/wxpay/notify_url";
+static NSString * const kWEIXINNOTIFYURL = @"";
 /**
  * 微信开放平台和商户约定的支付密钥
  *
  * 注意：不能hardcode在客户端，建议genSign这个过程由服务器端完成
  */
-static NSString * const  KWXPartnerKey = @"FSA5DF5sf5fd5FG535dty987354DGYft";
+static NSString * const  KWXPartnerKey = @"";
 /**
  *  微信公众平台商户模块生成的ID
  */
-static NSString * const  kWEIXINPartnerId = @"1414067502";
+static NSString * const  kWEIXINPartnerId = @"";
 
 @implementation LZMobilePayManager
 
